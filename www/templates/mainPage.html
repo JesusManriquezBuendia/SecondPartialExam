@@ -1,0 +1,15 @@
+<ion-view title="Main Page" id="page1">
+  <ion-content padding="true" class="has-header">
+    <h1 id="mainPage-heading1" style="color:#000000;">Stock Prices</h1>
+    <div id="mainPage-markdown1" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">Choose a Company: </p>
+    </div>
+    <form id="mainPage-form3" class="list">
+      <ion-radio id="mainPage-radio1" ng-model="mdl.radio1" value='APPL'>Apple Computer </ion-radio>
+      <ion-radio id="mainPage-radio2" ng-model="mdl.radio1" value='GE'>General Electric Company</ion-radio>
+      <ion-radio id="mainPage-radio3" ng-model="mdl.radio1" value='SBUX'>Starbucks Corporation</ion-radio>
+      <ion-radio id="mainPage-radio4" ng-model="mdl.radio1" value='WBA'>Walgreens Company</ion-radio>
+    </form>
+    <button id="mainPage-button1" class="button button-positive button-block" ui-sref="results({radio1: mdl.radio1})">Select</button>
+  </ion-content>
+</ion-view>
